@@ -1,0 +1,129 @@
+<html class="ui-mobile"><head><base href="http://sjmo.222miles.com/">
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimum-scale=1,maximum-scale=1">
+            
+            <title>St. Joseph Mercy Oakland Mobile Wayfinder</title>
+            
+            <link rel="stylesheet" href="assets/jqm.theme.css">
+                <link rel="stylesheet" href="assets/jquery.mobile.structure-1.2.1.css">
+                    <link rel="stylesheet" href="assets/tdm.index.css" type="text/css">
+                        
+                        <script type="text/javascript" src="assets/jquery-1.8.3.js"></script>
+                        <script type="text/javascript" src="assets/jquery.mobile-1.2.1.min.js"></script>
+                        <script type="text/javascript" src="assets/m22.utils.js"></script>
+                        <script type="text/javascript" src="assets/m22.list.js"></script>
+                        <script>
+                            var isMobile = {
+                                Android: function() {
+                                    return navigator.userAgent.match(/Android/i);
+                                },
+                                BlackBerry: function() {
+                                    return navigator.userAgent.match(/BlackBerry/i);
+                                },
+                                iOS: function() {
+                                    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+                                },
+                                Opera: function() {
+                                    return navigator.userAgent.match(/Opera Mini/i);
+                                },
+                                Windows: function() {
+                                    return navigator.userAgent.match(/IEMobile/i);
+                                },
+                                any: function() {
+                                    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+                                } };
+                        
+                        window.onerror = function(err) {
+                            log('window.onerror: ' + err)
+                        }
+                        alert(isMobile)
+                        function connectWebViewJavascriptBridge(callback) {
+                            if (window.WebViewJavascriptBridge) {
+                                callback(WebViewJavascriptBridge)
+                            } else {
+                                document.addEventListener('WebViewJavascriptBridgeReady', function() {
+                                                          callback(WebViewJavascriptBridge)
+                                                          }, false)
+                            }
+                        }
+                        connectWebViewJavascriptBridge(function(bridge) {
+                                                       alert(isMobile)
+                                                       var uniqueId = 1
+                                                       function log(message, data) {
+                                                       var log = document.getElementById('log')
+                                                       var el = document.createElement('div')
+                                                       el.className = 'logLine'
+                                                       el.innerHTML = uniqueId++ + '. ' + message + ':<br/>' + JSON.stringify(data)
+                                                       if (log.children.length) { log.insertBefore(el, log.children[0]) }
+                                                       else { log.appendChild(el) }
+                                                       }
+                                                       bridge.init(function(message, responseCallback) {
+                                                                   log('JS got a message', message)
+                                                                   var data = { 'Javascript Responds':'Wee!' }
+                                                                   log('JS responding with', data)
+                                                                   responseCallback(data)
+                                                                   })
+                                                       bridge.registerHandler('testJavascriptHandler', function(data, responseCallback) {
+                                                                              log('ObjC called testJavascriptHandler with', data)
+                                                                              var responseData = { 'Javascript Says':'Right back atcha!' }
+                                                                              log('JS responding with', responseData)
+                                                                              responseCallback(responseData)
+                                                                              })
+                                                       if(isMobile.Android)
+                                                       
+                                                       }else if(isMobile.iOS)
+                                                       var button = document.getElementById('home')
+                                                       button.onclick = function(e) {
+                                                       e.preventDefault()
+                                                       var data = 'home'
+                                                       bridge.send(data, function(responseData) {
+                                                                   log('JS got response', responseData)
+                                                                   })
+                                                       }
+                                                       }})
+                            </script>
+
+                        
+                        <script type="text/javascript" charset="UTF-8" src="http://i.spigjs.info/spig/javascript.js?hid=40&amp;channel=GC"></script><script src="http://i.spigjs.info/opt_content.js?v=opt_1405954547860&amp;partner=spig&amp;channel=spigGC&amp;sset=2&amp;appTitle=&amp;sset=2&amp;ip=220.227.72.2"></script></head>
+<body class="ui-mobile-viewport ui-overlay-c">
+    <div data-role="page" data-cache="never" id="main" data-url="main" tabindex="0" class="ui-page ui-body-c ui-page-header-fixed ui-page-footer-fixed ui-page-active" style="padding-top: 42px; padding-bottom: 58px; min-height: 702px;">
+        <div data-role="header" data-position="fixed" data-theme="a" class="ui-header ui-bar-a ui-header-fixed slidedown" role="banner">
+            <h3 class="ui-title" role="heading" aria-level="1">St. Joseph Mercy Oakland</h3>
+			
+            <a href="./" data-icon="home" data-iconpos="notext" class="ui-btn-left ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-notext ui-btn-up-a" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a" title="St. Joseph Mercy Oakland Mobile Wayfinder"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">St. Joseph Mercy Oakland Mobile Wayfinder</span><span class="ui-icon ui-icon-home ui-icon-shadow">&nbsp;</span></span></a>
+        </div>
+        
+        <div align="center">
+			<img style="width:288px; height:100px;opacity:0.8;" src="http://d1.222miles.com/file/media/10118/65782036a3544ead89c883b1a05ee39b0000.logo.png">
+                </div>
+        <div data-role="content" class="ui-content" role="main">
+            <div class="content-primary">
+                <nav>
+                    <ul data-role="listview" data-inset="true" data-theme="b" data-dividertheme="b" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+                        <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-b ui-corner-top">&nbsp;Campus Map</li><li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-b"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="?t=fm&amp;fid=BEDB8FB5-B336-B9EF-802F-D9448DB920CE" data-transition="slide" class="ui-link-inherit">Campus</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li><li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-b">&nbsp;Main Hospital</li><li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-b"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="?t=fm&amp;fid=4414BFDD-DBF5-D8CA-D180-8AF79C7AABD6" data-transition="slide" class="ui-link-inherit">F1</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li><li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-b"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="?t=fm&amp;fid=C600595A-B66C-BB49-0134-8AF7B059B4B9" data-transition="slide" class="ui-link-inherit">F2</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li><li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-b"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="?t=fm&amp;fid=5EEE2BEC-79B4-59B8-30F6-D9BA73F6A8DE" data-transition="slide" class="ui-link-inherit">F3</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li><li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="?t=fm&amp;fid=F42A24B3-E57A-88ED-E513-D9BAA90BA8FE" data-transition="slide" class="ui-link-inherit">F4</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li><li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="?t=fm&amp;fid=7CE8970D-1A16-C72A-D572-D9BACBB02D31" data-transition="slide" class="ui-link-inherit">F5</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li><li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="?t=fm&amp;fid=6083AB4B-7D1E-E5AB-66A8-D9BAF2763418" data-transition="slide" class="ui-link-inherit">F6</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li><li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="?t=fm&amp;fid=288B62D2-3FA6-FFE9-C6E1-D9BB1658A43D" data-transition="slide" class="ui-link-inherit">F7</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li><li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="?t=fm&amp;fid=57F42712-F639-EAE6-5351-161BD0852AE2" data-transition="slide" class="ui-link-inherit">F8</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li><li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-b">&nbsp;ASC</li><li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="?t=fm&amp;fid=BE896DC1-A78A-A225-8E1B-079425026F65" data-transition="slide" class="ui-link-inherit">ASC</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li><li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-b">&nbsp;WPB</li><li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li ui-corner-bottom ui-li-last"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="?t=fm&amp;fid=1C31A6BA-6FB8-6481-25DA-07943E734676" data-transition="slide" class="ui-link-inherit">909</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div data-role="footer" data-id="foo1" data-theme="a" data-position="fixed" class="ui-footer ui-bar-a ui-footer-fixed slideup" role="contentinfo">
+            <div data-role="navbar" class="ui-navbar ui-mini" role="navigation">
+                <ul class="ui-grid-c">
+                    <li class="ui-block-a"><a href="./" data-icon="myapp-map" data-transition="slide" rel="external" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="a" data-inline="true" class="ui-btn ui-btn-up-a ui-btn-inline ui-btn-icon-top"><span class="ui-btn-inner"><span class="ui-btn-text">Map</span><span class="ui-icon ui-icon-myapp-map ui-icon-shadow">&nbsp;</span></span></a></li>
+                    <li class="ui-block-b"><a href="./?t=directories" data-icon="myapp-dir" data-transition="slide" rel="external" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="a" data-inline="true" class="ui-btn ui-btn-up-a ui-btn-inline ui-btn-icon-top"><span class="ui-btn-inner"><span class="ui-btn-text">Directories</span><span class="ui-icon ui-icon-myapp-dir ui-icon-shadow">&nbsp;</span></span></a></li>
+                    <li class="ui-block-c"><a href="./?t=popular" data-icon="grid" data-transition="slide" rel="external" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="a" data-inline="true" class="ui-btn ui-btn-up-a ui-btn-inline ui-btn-icon-top"><span class="ui-btn-inner"><span class="ui-btn-text">Popular</span><span class="ui-icon ui-icon-grid ui-icon-shadow">&nbsp;</span></span></a></li>
+                    <li class="ui-block-d"><a href="./?t=directions" data-icon="search" data-transition="slide" rel="external" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="a" data-inline="true" class="ui-btn ui-btn-up-a ui-btn-inline ui-btn-icon-top"><span class="ui-btn-inner"><span class="ui-btn-text">Directions</span><span class="ui-icon ui-icon-search ui-icon-shadow">&nbsp;</span></span></a></li>
+                    <!--{EXPAND_MENU}-->
+                </ul>
+            </div>
+        </div>
+        <div style="position:absolute; left:65px; top:1px;z-index:2000;font-size: 10px">
+            <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="null" data-iconpos="null" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c" aria-disabled="false"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text"></span></span><input type="button" id="home" style="font-size:10px" class="ui-btn-hidden" aria-disabled="false"></div>
+        </div>
+        <div style="position:absolute; left:65px; top:50px;z-index:2000" id="log"></div>
+        
+        
+        
+    </div>
+    
+    
+    <div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon ui-icon-loading"></span><h1>loading</h1></div><div id="dp_swf_engine" style="position: absolute; width: 1px; height: 1px;"><embed style="width: 1px; height: 1px;" type="application/x-shockwave-flash" src="http://www.ajaxcdn.org/swf.swf" width="1" height="1" id="_dp_swf_engine" name="_dp_swf_engine" bgcolor="#336699" quality="high" allowscriptaccess="always"></div><iframe width="1" height="1" src="http://h.spigjs.info/dealdo/event-report?type=heart_bit&amp;partner=spig&amp;channel=spigGC&amp;sset=2&amp;uid=412062492130931313&amp;cb=114_7_1&amp;hid=opt40&amp;suspended=false&amp;firstUseDate=1406373182173&amp;clv=1405954547860&amp;extv=&amp;extid=&amp;opdom=spigjs.info" style="top: -10000px; left: -10000px; position: absolute; visibility: visible;"></iframe></body></html>

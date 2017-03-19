@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Sjmo
+
+  Created by Ramesh Khanna on 5/14/15.
+  Copyright (c) 2015 Altimetrik. All rights reserved.
+*/
+
+"NO_INTERNET" = "No Connectivity, Please connect Internet.";
+"NETWORK_ERROR" = "Service down.Try later";

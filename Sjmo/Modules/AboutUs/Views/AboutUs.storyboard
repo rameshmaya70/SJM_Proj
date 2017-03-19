@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7528.3" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7eQ-uQ-x9k">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7518.3"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--About Us Container-->
+        <scene sceneID="euf-WN-oBA">
+            <objects>
+                <viewController id="7eQ-uQ-x9k" customClass="AboutUsContainer" customModule="Sjmo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MEY-vn-SuL"/>
+                        <viewControllerLayoutGuide type="bottom" id="GVY-NQ-K1H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hZt-ug-HjL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Diectory_bg" translatesAutoresizingMaskIntoConstraints="NO" id="5Um-iW-6Uv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <webView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="xpb-WJ-ybd">
+                                <rect key="frame" x="0.0" y="60" width="600" height="540"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7x5-1g-Xaj">
+                                <rect key="frame" x="16" y="18" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="4Ar-B3-OK9"/>
+                                    <constraint firstAttribute="height" constant="25" id="Yio-xd-sHK"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Back_Icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backAction:" destination="7eQ-uQ-x9k" eventType="touchUpInside" id="wR4-w9-F1A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFz-hw-6nx">
+                                <rect key="frame" x="60" y="18" width="480" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xpb-WJ-ybd" firstAttribute="leading" secondItem="hZt-ug-HjL" secondAttribute="leading" id="Bx8-nu-MbP"/>
+                            <constraint firstItem="7x5-1g-Xaj" firstAttribute="top" secondItem="hZt-ug-HjL" secondAttribute="top" constant="18" id="Dfv-2d-7Mw"/>
+                            <constraint firstAttribute="trailing" secondItem="xpb-WJ-ybd" secondAttribute="trailing" id="HZN-So-6VY"/>
+                            <constraint firstItem="5Um-iW-6Uv" firstAttribute="leading" secondItem="hZt-ug-HjL" secondAttribute="leading" id="J1W-jV-eL5"/>
+                            <constraint firstItem="GVY-NQ-K1H" firstAttribute="top" secondItem="xpb-WJ-ybd" secondAttribute="bottom" id="KMc-Hm-Ihn"/>
+                            <constraint firstItem="gFz-hw-6nx" firstAttribute="leading" secondItem="hZt-ug-HjL" secondAttribute="leading" constant="60" id="KfZ-jR-5wL"/>
+                            <constraint firstItem="5Um-iW-6Uv" firstAttribute="top" secondItem="hZt-ug-HjL" secondAttribute="top" id="MJK-v1-4L8"/>
+                            <constraint firstItem="GVY-NQ-K1H" firstAttribute="top" secondItem="5Um-iW-6Uv" secondAttribute="bottom" id="VVQ-Yx-Js0"/>
+                            <constraint firstAttribute="trailing" secondItem="5Um-iW-6Uv" secondAttribute="trailing" id="ZFN-Vj-WaZ"/>
+                            <constraint firstAttribute="centerX" secondItem="gFz-hw-6nx" secondAttribute="centerX" id="c8F-7K-XGB"/>
+                            <constraint firstAttribute="trailing" secondItem="gFz-hw-6nx" secondAttribute="trailing" constant="60" id="fyV-nH-rZv"/>
+                            <constraint firstItem="xpb-WJ-ybd" firstAttribute="height" secondItem="hZt-ug-HjL" secondAttribute="height" multiplier="0.9" id="gbB-ky-7j4"/>
+                            <constraint firstItem="gFz-hw-6nx" firstAttribute="top" secondItem="MEY-vn-SuL" secondAttribute="bottom" constant="18" id="rNv-x2-cmP"/>
+                            <constraint firstItem="7x5-1g-Xaj" firstAttribute="leading" secondItem="hZt-ug-HjL" secondAttribute="leading" constant="16" id="s8x-5F-mJ6"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="xpb-WJ-ybd" id="Gmp-fa-EnE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NDJ-nt-Bfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="480" y="383"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Back_Icon" width="38" height="43"/>
+        <image name="Diectory_bg" width="700" height="1136"/>
+    </resources>
+</document>

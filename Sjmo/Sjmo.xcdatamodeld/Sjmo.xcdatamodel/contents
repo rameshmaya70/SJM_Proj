@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7541.6" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PhysicianEntity" representedClassName="PhysicianEntity" syncable="YES">
+        <attribute name="board1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="board2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="board3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="degree" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dept" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fellowship1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fellowship2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="internship1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="medicareid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="membership" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="middlename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="offAddr2a" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="offAddr2b" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="offAddr3a" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="offAddr3b" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office1city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office1fax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office1name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office1state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office1tele1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office1tele2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office1zip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office2city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office2fax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office2name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office2state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office2tele1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office2tele2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office2zip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office3city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office3fax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office3name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office3state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office3tele1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office3tele2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="office3zip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="officeAdd1a" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="officeAdd1b" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="speciality2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="university1" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SyncStatus" representedClassName="PRODUCT_MODULE_NAME.SyncStatus" syncable="YES">
+        <attribute name="flag" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PhysicianEntity" positionX="-63" positionY="-18" width="128" height="720"/>
+        <element name="SyncStatus" positionX="-54" positionY="27" width="128" height="60"/>
+    </elements>
+</model>

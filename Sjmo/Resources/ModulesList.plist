@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Physician Directory</string>
+		<key>imageSel</key>
+		<string>Phy_FocusLogo</string>
+		<key>imageUnsel</key>
+		<string>PhysicianDirectoryLogo</string>
+		<key>storyBoard</key>
+		<string>Physician</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Services</string>
+		<key>imageSel</key>
+		<string>Services_FocusLogo</string>
+		<key>imageUnsel</key>
+		<string>ServicesLogo</string>
+		<key>storyBoard</key>
+		<string>Services</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Locations</string>
+		<key>imageSel</key>
+		<string>Locations_FocusLogo</string>
+		<key>imageUnsel</key>
+		<string>LocationsLogo</string>
+		<key>storyBoard</key>
+		<string>Locations</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Way Finder</string>
+		<key>imageSel</key>
+		<string>Way_FocusLogo</string>
+		<key>imageUnsel</key>
+		<string>WayFinderLogo</string>
+		<key>storyBoard</key>
+		<string>WayFinder</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>About Us</string>
+		<key>imageSel</key>
+		<string>About_FocusLogo</string>
+		<key>imageUnsel</key>
+		<string>AboutUsLogo</string>
+		<key>storyBoard</key>
+		<string>AboutUs</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>News &amp; Updates</string>
+		<key>imageSel</key>
+		<string>News_FocusLogo</string>
+		<key>imageUnsel</key>
+		<string>News&amp;UpdatesLogo</string>
+		<key>storyBoard</key>
+		<string>News&amp;Updates</string>
+	</dict>
+</array>
+</plist>

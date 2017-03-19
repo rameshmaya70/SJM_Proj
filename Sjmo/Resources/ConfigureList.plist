@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CouchBase</key>
+	<dict>
+		<key>url</key>
+		<string>http://65.182.173.47:4984/sjmo</string>
+		<key>dbName</key>
+		<string>sjmo</string>
+		<key>username</key>
+		<string>sjmoSyncGateway</string>
+		<key>password</key>
+		<string>5e74310e25c11751</string>
+	</dict>
+	<key>ImageServer</key>
+	<dict>
+		<key>username</key>
+		<string>sjmoPhysianImages</string>
+		<key>password</key>
+		<string>0d769db5a50f0b1f</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7528.3" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7518.3"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="MUw-gX-TdY">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="h1d-D2-khn">
+                    <rect key="frame" x="44" y="169" width="393" height="72"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="MUw-gX-TdY" secondAttribute="centerX" id="0kS-QB-BbK"/>
+                <constraint firstItem="h1d-D2-khn" firstAttribute="height" secondItem="MUw-gX-TdY" secondAttribute="height" multiplier="0.15" id="CEQ-s4-Ogc"/>
+                <constraint firstAttribute="trailing" secondItem="h1d-D2-khn" secondAttribute="trailing" constant="43" id="FGY-im-KvJ"/>
+                <constraint firstAttribute="bottom" secondItem="MUw-gX-TdY" secondAttribute="bottom" id="FM2-hG-WOV"/>
+                <constraint firstAttribute="trailing" secondItem="MUw-gX-TdY" secondAttribute="trailing" id="Lwa-wc-wBq"/>
+                <constraint firstAttribute="centerY" secondItem="h1d-D2-khn" secondAttribute="centerY" constant="35" id="OfM-yh-pcg"/>
+                <constraint firstItem="h1d-D2-khn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="44" id="YfB-4t-GQm"/>
+                <constraint firstItem="MUw-gX-TdY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lhx-HA-4jm"/>
+                <constraint firstItem="MUw-gX-TdY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qx6-XK-1C2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="469" y="394"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HomeBackGround" width="840" height="1336"/>
+        <image name="HomeLogo" width="640" height="164"/>
+    </resources>
+</document>
